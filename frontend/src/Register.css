@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+}
+ .bgImage {
+  /*background-color: #ebeeef;*/
+  background-image: url("loginBgImage.png");
+}
+
+.registerMainDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rcenterMainDiv {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: white;
+  width: 45%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.registerTitle {
+  background-image: url("registerImage.jpg");
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  color: white;
+  align-items: center;
+  padding: 70px 15px 74px 15px;
+}
+
+.registerTitle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(54, 84, 99, 0.7);
+}
+
+#registerformMain {
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 0.5px solid grey;
+  padding: 10px 10px 10px 10px;
+  outline: none;
+}
+#selectDrp,
+input[type="date"] {
+  width: 100%;
+  padding: 7px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 0px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: none;
+  border-bottom: 1px solid rgb(55, 109, 211);
+}
+
+.btn {
+  background-color: rgb(55, 109, 211);
+}
+
+@media screen and (max-width: 992px) {
+  .rcenterMainDiv {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .rcenterMainDiv {
+    width: 90%;
+  }
+}
